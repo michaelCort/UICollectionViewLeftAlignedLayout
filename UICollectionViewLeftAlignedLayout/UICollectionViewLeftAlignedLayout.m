@@ -61,9 +61,7 @@
     if (superAttributes == nil) {
         return superAttributes;
     }
-    if (indexPath.row < [self.collectionView numberOfItemsInSection:indexPath.section] - 2) {
-        return superAttributes;
-    }
+    
     UICollectionViewLayoutAttributes* currentItemAttributes = [superAttributes copy];
     
     UIEdgeInsets sectionInset = [self evaluatedSectionInsetForItemAtIndex:indexPath.section];
